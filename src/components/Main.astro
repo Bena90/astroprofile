@@ -1,0 +1,193 @@
+
+<main id='home' class='main-container'> 
+    <div>
+        <div class = 'd-flex'>
+            <h2>H</h2>
+            <h2>i</h2>
+            <h2>,</h2>
+            <span>⠀⠀</span>
+            <h2>I</h2>
+            <h2>’</h2>
+            <h2>m</h2>
+            <h2>👋​</h2>
+        </div>
+        <div class = 'd-flex'>
+            <div class = 'beStyle d-flex'>
+                <span>⠀⠀⠀⠀⠀⠀</span>
+                <h2>E</h2>
+                <h2>s</h2>
+                <h2>t</h2>
+                <h2>e</h2>
+                <h2>b</h2>
+                <h2>a</h2>
+                <h2>n</h2>
+                <span>⠀⠀</span>
+                <h2>B</h2>
+                <h2>e</h2>
+                <h2>n</h2>
+                <h2>a</h2>
+                <h2>b</h2>
+                <h2>a</h2>
+                <h2>r</h2>
+                <h2>r</h2>
+                <h2>e</h2>
+            </div>
+            <h2>😄​</h2>
+        </div>
+        <h4> #fullstackdeveloper #reactdeveloper #reactnativedeveloper</h4>
+        <div>
+            <button class='resumeButton'>
+                <a href='./Resume.pdf' target="_blank" rel="noopener noreferrer" download="Resume.pdf"> 
+                Download Resume 
+                </a>
+            </button>
+        </div>
+    </div>
+</main>
+
+<style>
+.main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--global-font-family3);
+    width: 100%;
+}
+
+.main-container h2{
+    font-size: 5rem;
+    font-weight: 700;
+    margin: -10px 0;
+    text-indent: 3px;
+    margin: 1px 0px;
+    letter-spacing: -1px;
+}
+
+.main-container h4{
+    color: var(--text-gray-200);
+    font-family: var(--global-font-family3);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .main-container h2{
+        font-size: 2.5rem;
+    }
+
+    .main-container h3 {
+        font-size: 1.8rem;
+    }
+
+    .main-container h4{
+        font-size: 1.0rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .main-container h2{
+        font-size: 1.5rem;
+    }
+    .main-container h3 {
+        font-size: 1rem;
+    }
+    .main-container span {
+        font-size: 0.3rem;
+    }
+}
+
+.main-container h1:hover{
+    animation: rubberBand 1s;
+    color: var(--global-color-violet);
+}
+
+.main-container h2:hover{
+    
+    animation: rubberBand 1s !important;
+    -webkit-text-fill-color: #FF3366;
+    color: #FF3366;
+}
+
+.beStyle > h2{
+    background-image: var(--global-color-gradient1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.main-container>div>div>div>h2:hover{
+    animation: rubberBand 1s;
+}
+
+.main-container>div>div>h2:hover{
+    animation: rubberBand 1s;
+}
+
+@keyframes rubberBand{
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    35%{
+        transform: scale3d(1.25,.75,1);
+    }
+    45%{
+        transform: scale3d(.75,1,1);
+    }
+    60%{
+        transform: scale3d(1.2,.8,1);
+    }
+    75%{
+        transform: scale3d(1.05,.95,1);
+    }
+    100%{
+        transform: scale3d(1,1,1); 
+    }
+}
+
+/* Button */ 
+.resumeButton{
+    margin-left: 0.5em;
+    height: 4em;
+    margin-top: 20px;
+    padding: 0.2em 2em 0.2em 2em;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--global-font-family3);
+    background-size: 12px 52px;
+    border-radius: 5px;
+    border: 0.15em solid #FFF;
+    cursor: pointer;
+    background-color: transparent;
+
+  }
+  .resumeButton:hover {
+      color: #FAFAFA;
+      border-color: #AF40FF;
+
+  }
+  .resumeButton:focus {
+      background-position: 2em -4em;
+      -webkit-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+  }
+
+  .resumeButton a {
+    text-decoration: none;
+  }
+  .resumeButton a:hover, a:link, a:focus, a:active, a:visited {
+    font-family: var(--global-font-family3);
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFF;
+  }
+</style>

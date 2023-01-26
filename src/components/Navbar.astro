@@ -1,0 +1,115 @@
+<header class="navbar">
+        <nav class="contenedor">
+            <h1>
+                <span class="logoOne">{'</ '}</span>               
+                <span class="logoBeCode">Esteban M Benabarre</span>                         
+                <span class="logoOne">{' >'}</span>               
+            </h1>
+            <div class="navigation-menu">
+                <a href='#home' class="navButton" >Home</a>
+                <a href='#about' class="navButton" >About Me</a>
+                <a href='#project' class="navButton" >Projects</a>
+                <a href='#contact' class="navButton" >Contact</a>
+            </div>
+        </nav>
+</header>
+
+<style>
+    .contenedor {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.8);
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content:space-between;
+    font-family: var(--global-font-family4);
+    z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+        .contenedor {
+            flex-direction: column;
+        }
+
+        .contenedor > div {
+            margin-top: 5px;
+        }
+
+        .contenedor-hidden {
+            display:none;
+        }
+    }
+
+    .contenedor>h1 {
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .logoBeCode{
+        background-image: var(--global-color-gradient1);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    .contenedor h5 {
+        margin: 0;
+        color: var(--global-color-one);
+    }
+
+    .navigation-menu{
+        margin-right: 20px;
+    }
+    .navigation-menu a{
+        font-family: var(--global-font-family3);
+        font-weight: 600;
+        text-decoration: none;
+        color: rgb(208, 208, 208);
+        font-size: 16px;
+        padding-right: 30px;
+        transition: .1s linear;
+    }
+
+    .navButton:hover {
+        color: var(--global-color-one);
+    };
+
+    .logoName{
+        background-image: var(--global-color-gradient1);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        font-weight: 600;
+        font-size: 25px;
+    };
+
+    .logoOne{
+        color: rgb(208, 208, 208);
+    };
+
+    @media (max-width: 1192px) {
+        .navigation-menu a {
+            font-size: 18px;
+            margin: 0 10px
+        }
+    };
+
+    @media (max-width: 1000px) {
+        .contenedor>h1, .logoBeCode, .logoName{
+            font-size: 20px;
+        }
+        .navigation-menu a {
+            font-size: 16px;
+            margin: 0 10px
+        }
+
+    }
+</style>
